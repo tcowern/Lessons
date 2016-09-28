@@ -1,0 +1,52 @@
+/*.scroll-right {*/
+
+/*}*/
+
+.scroll-right img {
+
+     transform: translate(50px, 20px);/*translateX(0%);*/
+     opacity: 1;
+     border: none;
+     transition:
+        transform 5s ease-in-out 0s,
+        border 5s ease-in-out 0s,
+        opacity 5s ease-out 500ms;
+}
+
+.scroll-right img.animate {
+    /*left: 50%;*/
+    opacity: 0;
+    border: 10px dotted black;
+    transform: translateX(100vw);
+}
+
+/* High performance properties: tranforms, opactiy, scale. */
+
+
+
+
+
+
+
+/*.sparks {*/
+/*    font-size: 40px;*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    color: red;*/
+/*    position: relative;*/
+/*    -webkit-animation: mymove is infinite;*/
+/*    animation: mymove is infinite;*/
+
+/*}*/
+
+/*@-webkit-keyframes mynewmove {*/
+/*    from {left: 0px;}*/
+/*    to {left: 200px;}*/
+/*}*/
+
+/*@-webkit-keyframes mynewmove {*/
+/*    from {top: 0px;}*/
+/*    to {top: 200px;}*/
+/*}*/
+
+
