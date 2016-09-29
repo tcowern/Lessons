@@ -1,31 +1,268 @@
-/*.scroll-right {*/
+/* keyframes definition for WebKit browsers */
 
-/*}*/
-
-.scroll-right img {
-
-     transform: translate(50px, 20px);/*translateX(0%);*/
-     opacity: 1;
-     border: none;
-     transition:
-        transform 5s ease-in-out 0s,
-        border 5s ease-in-out 0s,
-        opacity 5s ease-out 500ms;
+@-webkit-keyframes travel {
+  from { left: 0;     }
+  to   { left: 640px; }
 }
 
-.scroll-right img.animate {
-    /*left: 50%;*/
-    opacity: 0;
-    border: 10px dotted black;
-    transform: translateX(100vw);
+@-webkit-keyframes bounce {
+  from, to  {
+    bottom: 0;
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    bottom: 220px;
+    -webkit-animation-timing-function: ease-in;
+  }
 }
 
-/* High performance properties: tranforms, opactiy, scale. */
+@-webkit-keyframes spin {
+  from {                                     }
+  to   { -webkit-transform: rotateZ(360deg); }
+}
+
+/* keyframes definition for other browsers */
+
+@keyframes travel1 {
+  from { left: 0;     }
+  to   { left: 640px; }
+}
+
+@keyframes travel2 {
+  from { left: 0;     }
+  to   { left: 640px; }
+}
+
+@keyframes bounce {
+  from, to  {
+    bottom: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    bottom: 220px;
+    animation-timing-function: ease-in;
+  }
+}
 
 
+@keyframes spin {
+  from {
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce1 {
+  from, to  {
+    bottom: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    bottom: 220px;
+    animation-timing-function: ease-in;
+  }
+}
 
 
+@keyframes spin1 {
+  from {
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 
+@keyframes bounce2 {
+  from, to  {
+    bottom: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    bottom: 220px;
+    animation-timing-function: ease-in;
+  }
+}
+
+
+@keyframes spin2 {
+  from {
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* styles for the stage and animated elements */
+
+#stage {
+  position: relative;
+  margin: 1em auto;
+  width: 660px;
+  height: 240px;
+  border: 2px solid #666;
+  background: #cff;
+}
+
+
+#traveler {
+  position: absolute;
+  width: 20px;
+  height: 300px;
+
+  -webkit-animation-name: travel;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-duration: 4.8s;
+
+  animation-name: travel;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 4.8s;
+}
+
+
+#traveler1 {
+  position: absolute;
+  width: 20px;
+  height: 300px;
+
+  -webkit-animation-name: travel;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-duration: 4.8s;
+
+  animation-name: travel;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 4s;
+}
+
+#traveler2 {
+  position: absolute;
+  width: 20px;
+  height: 300px;
+
+  -webkit-animation-name: travel;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-duration: 4.8s;
+
+  animation-name: travel;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 3.5s;
+}
+#bouncer1 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: red;
+  background: -webkit-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), red 50%) red;
+  background: -moz-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), red 50%) red;
+  background: -o-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), red 50%) red;
+  background: -ms-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), red 50%) red;
+  background: radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), red 50%) red;
+
+  -webkit-animation-name: bounce, spin;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 4.2s;
+
+  animation-name: bounce, spin;
+  animation-iteration-count: infinite;
+  animation-duration: 4.2s;
+}
+
+#bouncer2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: blue;
+  background: -webkit-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), blue 50%) blue;
+  background: -moz-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), blue 50%) blue;
+  background: -o-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), blue 50%) blue;
+  background: -ms-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), blue 50%) blue;
+  background: radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), blue 50%) blue;
+
+  -webkit-animation-name: bounce, spin;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+
+  animation-name: bounce, spin;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+#bouncer3 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: green;
+  background: -webkit-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), red 50%) red;
+  background: -moz-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), red 50%) red;
+  background: -o-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), red 50%) red;
+  background: -ms-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), red 50%) red;
+  background: radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), red 50%) red;
+
+  -webkit-animation-name: bounce, spin;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+
+  animation-name: bounce, spin;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+#bouncer4 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: purple;
+  background: -webkit-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), blue 50%) blue;
+  background: -moz-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), blue 50%) blue;
+  background: -o-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), blue 50%) blue;
+  background: -ms-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), blue 50%) blue;
+  background: radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), blue 50%) blue;
+
+  -webkit-animation-name: bounce, spin;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+
+  animation-name: bounce, spin;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
 
 
 /*.sparks {*/

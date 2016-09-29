@@ -3,21 +3,16 @@
     <head>
         <title>Animation Sensations</title>
         <link rel="stylesheet" href="Fireworks.css">
+        <script type="text/javascript" src="Fireworks.js"></script>
 
     </head>
-    <body>
-        <marquee direction="right">
-            <img src="http://vignette3.wikia.nocookie.net/backyardmonsters/images/a/a1/Pacman-moving.gif/revision/latest?cb=20120607091206">
-        </marquee>
-        <div class="scroll-right">
-            <img class="" src="http://vignette3.wikia.nocookie.net/backyardmonsters/images/a/a1/Pacman-moving.gif/revision/latest?cb=20120607091206">
+    <body onload="setTravelers()">
+       <div id="stage">
+            <!--<div id="traveler">-->
+                <!--div where the balls will be added-->
+            <!--</div>-->
         </div>
-        <button
-            id="pacmanimate"
-            type="button"
-            onclick="doAnimation()">
-            Pacman&apos;s a commin&apos;
-        </button>
-        <script src="Fireworks.js"></script>
+    
+        
     </body>
 </html>
