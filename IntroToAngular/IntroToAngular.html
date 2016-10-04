@@ -1,31 +1,35 @@
 <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src=IntroToAngular.js></script>
+<body  ng-app="myApp">
 
-<html ng-app="myModule">
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="IntroToAngular.js"></script>
-    <link href="IntroToAngular.css" rel="stylesheet"/>
-  </head>
-  <body  ng-app="myModule">
-    <section>Part 1
-    <div ng-controller="myController">
-            <td>
-            <button ng-click="$log.log(message)">Send Something to the Log</button>
-            </td><br></br>
-            <td></section>
-            <div ng-app="myApp" ng-controller="myCtrl">
+<!-- <div ng-controller="logCtrl"> -->
 
-            <button ng-click="myFunc()">Click Me!</button>
+<button ng-click="$message)">Click to log to console</button>
 
+
+
+<br>
+<br>
+
+<div ng-controller="myCtrl">
+
+<button ng-click="hideFunc()">Click to see a heading</button>
+<br>
+<h1 ng-show="showMe">This is the hidden heading!</h1>
+
+</div>
+<br>
+
+<div ng-controller="myCtrl2">
+<button ng-click="myFunc()">Click to see a list!</button>
 <div ng-show="showMe">
-    <h1>Menu:</h1>
-    <div>Pizza</div>
-    <div>Pasta</div>
-    <div>Pesce</div>
+    <ul>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    </ul>
 </div>
-
 </div>
-
-    </div>
-  </body>
 </html>

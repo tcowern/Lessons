@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html  ng-app="mainApp">
+  <head>
+    <title>Intro to Angular Part III</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="IntroToAngular3.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+      <script src="IntroToAngular3.js"></script>
+
+  </head>
+<body>
+
+<div>
+  <h3>This is the intro to angular part III</h1>
+  <br>
+    <button id="1" type="button" class="btn btn-primary btn-lg btn-block" ng-click="myVal = !myVal">Large</button>
+  <br>
+  <br>
+  <br>
+  <div ng-show="myVal"  class="message">
+    <h1 class="centered">This is the hidden HTML that you can't see unless you click the giant button</h1>
+    <button class="btn btn-primary btn-sm" ng-click="myVal = !myVal">Close</button>
+  </div>
+
+</div>
+
+</body>
+</html>

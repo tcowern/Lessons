@@ -1,0 +1,12 @@
+.message {
+    position: fixed;
+    bottom: 30%;
+    right: 40%;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 20px;
+}
+
+.centered {
+  text-align: center;
+}
