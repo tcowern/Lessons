@@ -1,10 +1,10 @@
-angular.module('myApp', []).controller('logMe', logMeController); 
+angular.module('myApp', [])
+.controller('myCtr', myController); 
 
-function logMeController () {
-//    var that = this;
-//    that.clickMe =  function() { 
-//       console.log("You Clicked");
-//  }
+function myController() {
+var main = this;
+console.log("You Clicked!");
+
  }
  
 

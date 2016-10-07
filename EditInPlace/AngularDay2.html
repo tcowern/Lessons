@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html  ng-app="App">
+  <head>
+    <title>Angular Day 2</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <!--<link rel="stylesheet" type="text/css" href="AngularDay2.css">-->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+      <script src="AngularDay2.js"></script>
+
+  </head>
+<body ng-controller="mainCtrl as main">
+
+<h1>Hello World!</h1>
+
+<!-- basic ng-repeat over an array -->
+
+<ul>
+  <li ng-repeat="monkey in main.monkeys">My name is {{ monkey }}.  I'm monkey # {{ $index }} </l1>
+</ul>
+<br>
+
+<!-- another way to ge the data -->
+
+<ul>
+  <li ng-repeat="monkey in main.monkeyObj"> {{ monkey.name }} likes to {{ monkey.biz }} with {{ monkey.food }}</li>
+</ul>
+
+</body>
+</html>

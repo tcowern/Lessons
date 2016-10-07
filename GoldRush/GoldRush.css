@@ -1,0 +1,16 @@
+.map {
+    position: fixed;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left:0;
+    background-image: url("http://www.timvandevall.com/wp-content/uploads/printable-treasure-map-for-kids-1.jpg");
+}
+
+.treasureclass {
+  position: fixed;
+  font-size: 25px;
+  color: red;
+  width: 20px;
+}

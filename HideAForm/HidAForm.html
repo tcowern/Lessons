@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html  ng-app="App">
+  <head>
+    <title>Hide-A-Form</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="HideAForm.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+      <script src="HideAForm.js"></script>
+
+  </head>
+<body ng-controller="mainCtrl as main">
+
+<h3 class="title">Hide-A-Form</h3>
+<br>
+<div class="buttonDiv">
+<button id="1" type="button" class="btn btn-primary btn-lg" ng-click="myVal = !myVal">Click to show form!</button>
+</div>
+<section class="input" ng-show="myVal">
+<div>
+  <p>Name:</p><input type="text" ng-model="name">
+</div>
+<div>
+  <p>Bio:</p><input type="text" ng-model="bio">
+</div>
+<div>
+  <p>Favorite Books:</p><input type="text" ng-model="books">
+</div>
+<div>
+  <p>Favorite Javascript Libraries:</p><input type="text" ng-model="fav">
+</div>
+<div>
+  <button class="btn btn-primary btn-sm" ng-click="main.submitForm">Submit</button>
+</div>
+</section>
+<section class="profile">
+<div>
+  <p id="name">Name:</p>
+</div>
+<div>
+  <p id="bio">Bio:</p>
+</div>
+<div>
+  <p id="favs">Favorite Books:</p>
+</div>
+<div>
+  <p id="favjava">Favorite Javascript Libraries:</p>
+</div>
+</section>
+
+
+</body>
+</html>

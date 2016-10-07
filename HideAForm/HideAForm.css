@@ -1,0 +1,23 @@
+
+.title {
+  padding: 20px;
+  text-align: center;
+}
+
+.buttonDiv {
+  margin: auto;
+  width: 10%;
+
+}
+
+.input {
+  font-size: 30px;
+  font-family: Courier New, Courier, monospace;
+
+}
+
+.profile {
+  font-size: 30px;
+  font-family: Courier New, Courier, monospace;
+}
+

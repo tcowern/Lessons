@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html ng-app="App">
+<head>
+  <title>Function Practice 2</title>
+  <script src="functionPractice2.js"></script>
+  <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+  <div>
+    <input type="button" class="btn btn-info" value="Get Name" onclick="getName({ name: 'Luisa', age: 25 })"> Will return the name from { name: 'Luisa', age: 25 }
+  </div>
+   <div>
+    <input type="button" class="btn btn-info" value="Total Letters" onclick="totalLetters(['javascript', 'is', 'awesome'])"> Will return the number 19..
+  </div>
+     <div>
+    <input type="button" class="btn btn-info" value="Total Letters" onclick="totalLetters(['what', 'happened', 'to', 'my', 'function'])"> Will return the number 24..
+  </div>
+  <div>
+    <input type="button" class="btn btn-info" value="City Return" onclick="keyValue('city', 'Denver')"> Will return city: Denver.
+  </div>
+    <div>
+    <input type="button" class="btn btn-info" value="Negative Index" onclick="negativeIndex(['a', 'b', 'c', 'd', 'e'], -2)"> Will return "e".
+  </div>
+</body>
+</html>
+
