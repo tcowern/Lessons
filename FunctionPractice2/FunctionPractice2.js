@@ -94,4 +94,4 @@ function or (myArr) {
   }
         console.log("truth is " + truth);
         return truth;
-}
+
