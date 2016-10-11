@@ -1,0 +1,42 @@
+.block {
+  /*display: inline-block;*/
+  float: left;
+  width: 30%;
+  margin: 10px;
+  padding-left: 100px;
+}
+
+.navtron {
+  text-align: center;
+  /*background-color: white;*/
+}
+
+.backwhite {
+  background-color: white;
+}
+
+.red-text {
+  color: red;
+}
+
+.grey-nav {
+  color: grey;
+  width: 85%;
+  left: 100px;
+}
+
+.grey-buttons {
+  color:grey;
+  font-size: 20px;
+  
+}
+
+.myactive {
+  color: #0d0d0d;
+}
+
+.left {
+  margin: auto;
+  width: 100%;
+  
+}
